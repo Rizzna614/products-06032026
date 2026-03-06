@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome page</title>
+    <title>Document</title>
 </head>
 <body>
-<h1>Welcome!</h1>
-
-<a href = "/about">About</a> <br>
-<a href = "/info">Info</a> <br>
-<a href = "/products">All products</a> <br>
+    <?php
+    foreach ($product as $i) {
+        echo "<h1>". $i["name"]. "</h1> <br>";
+    }
+    ?>
 </body>
 </html>
